@@ -1,0 +1,121 @@
+.pokeball_wrapper {
+	position: relative;
+	--size: 80px;
+	--ball: 50%;
+	width: var(--size);
+	height: var(--size);
+	background-color: #000;
+	border-radius: var(--ball);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: shakermasna 1.25s infinite cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+
+.pokeball {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	width: calc(90%);
+	height: calc(90%);
+	background-color: rgb(0, 0, 0);
+	border-radius: var(--ball);
+	justify-content: center;
+	align-items: center;
+}
+
+.pokeTop {
+	position: absolute;
+	background-color: #b70606;
+	width: 100%;
+	height: 100%;
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+	z-index: 2;
+	transition: all 0.25s ease;
+}
+.pokeTop::after {
+	content: "";
+	position: absolute;
+	background-color: #ff0000;
+	width: 90%;
+	height: 90%;
+	left: 0;
+	top: 0;
+	border-radius: var(--ball);
+}
+
+.pokeBot {
+	position: absolute;
+	background-color: #ccc;
+	clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%);
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.pokeBot::after {
+	content: "";
+	position: absolute;
+	background-color: #fff;
+	width: 90%;
+	height: 90%;
+	bottom: 0;
+	left: 0;
+	border-radius: var(--ball);
+}
+
+/* cinta masna */
+.pokeball_wrapper::after {
+	--sizeCinta: calc(var(--size) / 6.6666);
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: var(--sizeCinta);
+	background-color: #000;
+	z-index: 3;
+}
+.pokeButton {
+	--sizeButton: calc(var(--size) / 2.5);
+	content: "";
+	position: absolute;
+	width: var(--sizeButton);
+	height: var(--sizeButton);
+	border-radius: var(--ball);
+	z-index: 4;
+	border: calc(var(--sizeButton) / 8) solid #000;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pokeButton::after {
+	content: "";
+	width: 70%;
+	height: 70%;
+	border-radius: var(--ball);
+	/* background-color: #7f8c8d; */
+	border: 1.5px solid #5d5d5d;
+}
+
+@keyframes shakermasna {
+	0% {
+		transform: translate(0, 0) rotate(0);
+	}
+	20% {
+		transform: translate(-8%, 0) rotate(-20deg);
+	}
+	30% {
+		transform: translate(8%, 0) rotate(20deg);
+	}
+	50% {
+		transform: translate(-8%, 0) rotate(-10deg);
+	}
+	60% {
+		transform: translate(8%, 0) rotate(10deg);
+	}
+	100% {
+		transform: translate(0, 0) rotate(0);
+	}
+}

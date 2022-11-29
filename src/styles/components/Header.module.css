@@ -1,0 +1,54 @@
+.header {
+	width: 100%;
+	height: auto;
+	/* background-color: aqua; */
+	margin-bottom: 0.25rem;
+	/* padding-bottom: 0.5rem; */
+}
+
+.navbarContainer {
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 60px;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr auto 1fr;
+	/* background-color: blueviolet; */
+}
+
+.navLeft {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.navCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: fit-content;
+	/* background-color: #2ec7e6; */
+}
+
+.logo {
+	position: relative;
+	width: 9rem;
+	height: 32px;
+	display: flex;
+	justify-content: center;
+}
+.logo::after {
+	content: "by Almeyda®";
+	position: absolute;
+	font-size: 8px;
+	color: var(--nextui-colors-text);
+	bottom: -8px;
+}
+
+.navRight {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}

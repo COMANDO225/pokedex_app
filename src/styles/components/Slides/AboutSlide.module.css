@@ -1,0 +1,41 @@
+.desc {
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* background-color: aqua; */
+    margin: 1.25rem 0;
+    gap: 1rem;
+}
+
+.infoItem {
+    /* background-color: red; */
+    color: #3c4752;
+}
+
+.label {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #3c4752;
+}
+
+.valor {
+    background-color: #eff1f3;
+    border-radius: 20px;
+    padding: 4px 0;
+    /* padding: 0.5rem; */
+}
+.valorText {
+    font-weight: 600;
+}
+
+.habilidadGrid {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}

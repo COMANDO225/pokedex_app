@@ -1,0 +1,82 @@
+.container {
+    width: 100%;
+    display: grid;
+    /* background-color: aquamarine; */
+    gap: 0.25rem;
+}
+.statsMasna {
+    --color: #c2bfc0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.25s ease;
+}
+
+.name {
+    position: absolute;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 0;
+}
+
+.number {
+    font-weight: 800;
+    color: #3c4752;
+    margin-left: 0.4rem;
+}
+
+.statsInfo {
+    position: relative;
+    display: flex;
+    background-color: #eff1f3;
+    border-radius: 20px;
+    padding: 4px 8px 4px 4px;
+    align-items: center;
+    z-index: 5;
+}
+
+.statsName {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--color) 0px 4px 10px;
+}
+
+.barContainer {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #e5eaee;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 1rem;
+    z-index: 1;
+}
+.normalBar {
+    /* background-color: #f44336;
+    background-color: #ff9800;
+    background-color: #4caf50; */
+}
+
+.especialBar {
+    /* background-color: #0081f2; */
+    z-index: 2;
+}
+
+.superBar {
+    /* background-color: #8715de; */
+    z-index: 3;
+}

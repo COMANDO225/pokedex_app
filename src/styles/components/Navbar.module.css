@@ -1,0 +1,192 @@
+.nav_wrapper {
+	background-color: #a81002;
+	position: sticky;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	top: -1px;
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
+	clip-path: var(--navbarClipPath);
+	height: var(--navbarHeight);
+	border-radius: 3px;
+	z-index: 100;
+}
+.line_container_left,
+.line_container_right {
+	position: absolute;
+	height: 130%;
+	top: 0px;
+	pointer-events: none;
+	user-select: none;
+	z-index: 1;
+}
+.line_container_left {
+	left: 90px;
+	transform: rotateY(180deg);
+}
+.line_container_right {
+	right: 90px;
+}
+.navbar {
+	display: grid;
+	grid-template-columns: 100px 1fr 100px;
+	align-items: center;
+	width: calc(100% - 0px);
+	height: calc(100% - 2px);
+	background-color: #da2818;
+	clip-path: var(--navbarClipPath);
+	border-radius: 3px;
+	/* padding: 0 1.5rem; */
+}
+
+.left_nav {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: center;
+}
+
+.circle_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--navbarSphere);
+	height: var(--navbarSphere);
+	border-radius: 50%;
+	background-color: #fafafa;
+}
+.circle {
+	display: flex;
+	position: relative;
+	/* overflow: hidden; */
+	width: calc(100% - 4px);
+	height: calc(100% - 4px);
+	border-radius: 50%;
+	background-color: #1e9bb7;
+}
+.circle::after {
+	content: "";
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	/* transform: translate(-50%, -50%); */
+	width: 80%;
+	height: 80%;
+	border-radius: 50%;
+	background-color: #2ec7e6;
+}
+.circle::before {
+	content: "";
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	/* transform: translate(-50%, -50%); */
+	width: 10px;
+	height: 10px;
+	z-index: 1;
+	border-radius: 50%;
+	background-color: #ffffff;
+}
+
+.center_nav {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	/* background-color: #1E9BB7; */
+}
+.logo {
+	position: relative;
+	width: 180px;
+	height: 36px;
+	/* background-color: #2ec7e6; */
+}
+.logo::after {
+	content: "by Almeyda®";
+	position: absolute;
+	font-size: 8px;
+	color: #ffffff;
+	bottom: -8px;
+	right: -1%;
+}
+.lucesitas {
+	position: absolute;
+	top: 1.1rem;
+	left: 0.5rem;
+	display: flex;
+	gap: 0.25rem;
+}
+.lucesita {
+	position: relative;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	border: 1px solid var(--nextui-colors-text);
+}
+.lucesita::after {
+	content: "";
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	width: 35%;
+	height: 35%;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.right_nav {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	/* background-color: peru; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.cooler_border {
+	--radius: 10px;
+	position: relative;
+	width: 22px;
+	height: 40px;
+	background-color: #a0a0a0;
+	border-radius: var(--radius);
+	display: flex;
+	border: 1px solid #eeeeee;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 2px 1px rgb(168, 18, 4);
+}
+.cooler {
+	position: absolute;
+	width: calc(100% - 1px);
+	height: calc(100% - 1px);
+	background-color: #000;
+	border-radius: var(--radius);
+	background-color: #191919;
+	opacity: 1;
+	background-image: linear-gradient(0deg, #191919 50%, #c2c2c2 50%);
+	background-size: 1px 2px;
+	overflow: hidden;
+}
+.cooler::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #2ec7e6;
+	background: radial-gradient(
+		ellipse 50% 50% at 50% 50%,
+		rgba(255, 255, 255, 0) 50%,
+		rgba(0, 0, 0, 0.6) 100%
+	);
+	opacity: 0.85;
+}

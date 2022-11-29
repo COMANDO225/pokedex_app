@@ -1,0 +1,163 @@
+.body_header {
+	position: relative;
+	width: 100%;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 1fr;
+	padding: 0 1rem;
+	/* background-color: rgba(255, 235, 205, 0.463); */
+}
+.head_main {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+}
+.image_container {
+	position: relative;
+	max-width: 220px;
+	min-height: 220px;
+	display: flex;
+	margin: 0 auto;
+	/* background-color: aquamarine; */
+}
+.image_container img {
+	filter: saturate(1.4) contrast(1.1);
+}
+
+.pokeDni {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	/* background-color: blueviolet; */
+}
+
+.idNumber {
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: #687076;
+	position: relative;
+	/* margin-bottom: -.5rem; */
+}
+.pokeName {
+	font-size: 2rem;
+	margin: 0;
+	text-transform: capitalize;
+}
+
+.pokeSubname {
+	color: #687076;
+	position: relative;
+	line-height: normal;
+}
+
+.pokeTipos {
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+	align-items: center;
+	margin-top: 0.75rem;
+	margin-bottom: 0.25rem;
+}
+
+.head_left {
+	position: absolute;
+	left: 1rem;
+}
+.head_right {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/* background-color: aqua; */
+	margin: 0 auto !important;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.head_right_wrapper {
+	/* background-color: #25d366; */
+	height: 95%;
+	width: 95%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.head_right_content {
+	position: sticky;
+	top: 0;
+	/* background-color: blueviolet; */
+	width: fit-content;
+	height: fit-content;
+	display: grid;
+	gap: 0.5rem;
+}
+
+.circleButton {
+	position: relative;
+	min-width: fit-content !important;
+	width: 3rem !important;
+	height: 3rem !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border-radius: 50%;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f5f7fb;
+	color: var(--nextui-colors-text);
+	border: none;
+}
+
+/* @media (min-width: 600px) {
+	.body_header {
+		grid-template-columns: 1fr 1fr;
+		justify-content: flex-start;
+	}
+	.pokeDni {
+		text-align: start;
+	}
+	.pokeTipos {
+		justify-content: flex-start;
+	}
+	.image_container {
+		margin: 0 auto;
+	}
+} */
+
+.shareContainer {
+	width: max-content;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	padding: 10px 1rem 10px 14px;
+	gap: 0.5rem;
+	border-radius: 10px;
+}
+
+.item:hover {
+	background-color: #f5f7fb;
+}
+
+.item_icon {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background-color: #25d366;
+	/* background-color: #0075fa; */
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.item_text {
+	color: currentColor;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 1;
+}

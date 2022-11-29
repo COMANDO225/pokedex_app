@@ -1,0 +1,125 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--navbarColor: #e12817;
+	--navbarColorBorder: #a81002;
+	--nextui-colors-red500: #f88581;
+	--nextui-colors-red600: var(--navbarColor);
+	--nextui-colors-background: #f6f8fc;
+	--navbarHeight: 72px;
+	--navbarSphere: 40px;
+	--navbarClipPath: polygon(
+		0 10px,
+		10px 0,
+		calc(100% - 10px) 0,
+		/* quiebre1 */ 100% 10px,
+		/* fin quiebre1 */ calc(100%) calc(100% - 22px),
+		/* normal */ calc(100% - 22px) 100%,
+		/* quiebre2 */ calc(100% - 140px) 100%,
+		/* quiebre2 esquina */ calc(100% - 145px) calc(100% - 8px),
+		/* quiebre2 fin esquina */ calc(100% - 180px) calc(100% - 8px),
+		/* quiebre2 inicio esquina */ calc(100% - 185px) 100%,
+		/* quiebre2 inicio esquina */ 22px 100%,
+		/* quiebre2 inicio esquina */ 0 calc(100% - 22px)
+			/* quiebre2 inicio esquina */
+	);
+	--bug: #aedf78;
+	--water: #43ccff;
+	--grass: #4ebe40;
+	--fire: #fd7d24;
+	--normal: #9da0aa;
+	--poison: #a552cc;
+	--electric: #f9be00;
+	--ground: #dd7748;
+	--fairy: #ed6ec7;
+	--fighting: #e81319;
+	--psychic: #ea5d60;
+	--ghost: #556aae;
+	--rock: #baab82;
+	--ice: #61cec0;
+	--flying: #748fc9;
+	--dark: #58575f;
+	--dragon: #0f6ac0;
+	--steel: #417d9a;
+	--unknown: #454545;
+	--shadow: #4f4f4f;
+
+	/* Tapbar properties */
+	--tapbarHeadHeight: 56px;
+	--tapbarFootHeight: 12px;
+	--tapbarClipPath: polygon(
+		0 10px,
+		10px 0,
+		calc(100% - 10px) 0,
+		100% 10px,
+		100% 100%,
+		0 100%
+	);
+	--tapbarHeadClipPath: polygon(
+		0 10px,
+		10px 0,
+		calc(100% - 10px) 0,
+		100% 10px,
+		100% 100%,
+		calc(100% - 70px) 100%,
+		calc(100% - 75px) calc(100% - 8px),
+		calc(100% - 110px) calc(100% - 8px),
+		calc(100% - 115px) 100%,
+		115px 100%,
+		110px calc(100% - 8px),
+		75px calc(100% - 8px),
+		70px 100%,
+		0 100%
+	);
+}
+
+.swiper {
+	width: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: all;
+	padding: 1rem;
+}
+
+.nextui-c-kXAjmv {
+	display: none;
+	content: "";
+	width: var(--nextui-space-6);
+	height: var(--nextui-space-6);
+	z-index: -2;
+	background: var(--nextui--tooltipColor);
+	border-radius: 0px 0px 2px;
+	position: absolute;
+}
+
+.nextui-c-kXAjmv-ifSfDtT-css {
+	inset: calc(15%) -6px auto auto;
+}
+
+.nextui-c-cFCyVg-fwMLmQ-color-default {
+	background: #fff;
+}
+
+.nextui-c-cFCyVg {
+	position: absolute;
+	width: auto;
+	padding: var(--nextui-space-4) var(--nextui-space-4);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.nextui-c-iWjDFM-jaenFi-cv {
+	--nextui--buttonPressedSca1e2: 0.8;
+	transform: scale(var(--nextui--buttonPressedSca1e2)) !important;
+}
