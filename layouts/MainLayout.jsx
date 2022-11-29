@@ -1,7 +1,6 @@
 import { useAtom } from "jotai";
 import Head from "next/head";
 import { pokemonAtom, pokemonesAtom } from "../atoms/pokemonesAtom";
-import Footer from "../components/Footer";
 import { GridPokemones } from "../components/Grids";
 import Navbar from "../components/Navbar2/index2";
 import PokeTapbar from "../components/Pokedex/PokeTapbar";

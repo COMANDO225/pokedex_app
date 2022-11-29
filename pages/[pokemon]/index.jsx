@@ -1,10 +1,7 @@
 import { useRouter } from "next/router";
-import { pokemonesAtom, tapbarActiveAtom } from "../../atoms/pokemonesAtom";
-import { useAtom } from "jotai";
 import { useState, useEffect } from "react";
 import MainLayout from "../../layouts/MainLayout";
 import api from "../../services/api";
-import ErrorPageMasna from "../404";
 
 const PokemonPage = () => {
 	const {

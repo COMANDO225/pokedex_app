@@ -2,13 +2,13 @@ import { Text } from "@nextui-org/react";
 import styles from "../../styles/components/Card.module.css";
 import Link from "next/link";
 import { useAtom } from "jotai";
-import { tapbarActiveAtom } from "../../atoms/pokemonesAtom";
 import TypePokemonTag from "../TypePokemonTag";
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import SkeletonUi from "../Loaders/SkeletonUi";
 import PokeBall from "../icons/PokeBall";
 import api from "../../services/api";
+import { tapbarActiveAtom } from "../../atoms/pokemonesAtom";
 
 const Card = ({ name }) => {
 	const ref = useRef();
